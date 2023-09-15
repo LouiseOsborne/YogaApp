@@ -1,5 +1,9 @@
 @import "../../variables/variables.scss";
 
+.poses-library {
+  margin-top: 300px;
+  overflow-y: scroll;
+}
 .poses-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);

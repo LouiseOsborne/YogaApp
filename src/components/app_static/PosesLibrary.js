@@ -20,7 +20,7 @@ const PosesLibrary = () => {
   };
 
   return (
-    <div>
+    <div className="poses-library">
       <div className="poses-container">
         {poses.map((pose, index) => (
           <div className="grid-item" key={index}>

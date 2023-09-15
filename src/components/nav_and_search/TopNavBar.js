@@ -10,7 +10,7 @@ import NavMenu from "./NavMenu";
 const TopNavBar = () => {
   return (
     <nav className="navbar-container">
-      <div>
+      <div className="poses-library-link">
         <Link to="/poses-library">Poses Library</Link>
       </div>
       <div>
