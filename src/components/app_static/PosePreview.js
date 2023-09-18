@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/app_static_sass/pose-preview.scss";
-import "./empty-heart.png";
-import "./filled-heart.png";
 
 const PosePreview = ({ pose }) => {
   const [isFavourite, setIsFavourite] = useState(false);
