@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../../styles/app_static_sass/poses-library.scss";
 import TopNavBar from "../nav_and_search/TopNavBar";
@@ -20,11 +19,6 @@ const PosesLibrary = () => {
         console.log(yogaPictures.length);
       });
   }, []);
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/pose-card");
-  };
 
   return (
     <div>
@@ -39,9 +33,7 @@ const PosesLibrary = () => {
           <div className="poses__container">
             {poses.map((pose, index) => (
               <div className="grid-item" key={index}>
-                <button className="pose__button" onClick={handleClick}>
-                  <PosePreview pose={pose} />
-                </button>
+                <PosePreview pose={pose} />
               </div>
             ))}
           </div>

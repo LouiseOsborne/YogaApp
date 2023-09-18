@@ -1,1 +1,16 @@
 @import "../../variables/variables.scss";
+
+.pose-preview__container {
+  position: relative;
+}
+
+.pose-preview__pose-button {
+  border: 0;
+}
+
+.pose-preview__favourite-button {
+  position: absolute;
+  border: 0;
+  right: 0px;
+  background-color: transparent;
+}
