@@ -14,7 +14,7 @@ const SideNavBar = () => {
           <input
             className="search-input"
             type="text"
-            placeholder="Search by name ..."
+            placeholder="Enter pose name..."
           />
           <button type="submit" className="search-button">
             Search
