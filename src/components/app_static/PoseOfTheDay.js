@@ -12,18 +12,20 @@ const PoseOfTheDay = () => {
     const currentDate = new Date().toDateString();
 
     if (lastGeneratedDate !== currentDate) {
-      axios
-        .get("https://yoga-api-nzy4.onrender.com/v1/poses")
-        .then((response) => {
-          const yogaPosesArray = response.data;
-          const randomIndex = Math.floor(Math.random() * yogaPosesArray.length);
-          const randomImageUrl = yogaPosesArray[randomIndex].url_png;
+      axios.get("http://localhost:4001/poses").then((response) => {
+        const yogaPosesArray = response.data;
+        console.log(response.data);
+        const randomIndex = Math.floor(Math.random() * yogaPosesArray.length);
+        const randomImageUrl = yogaPosesArray[randomIndex].url_png;
+        const randomName = yogaPosesArray[randomIndex].pose_name;
 
-          setRandomImage(randomImageUrl);
+        setRandomImage(randomImageUrl);
+        setPoseName(randomName);
 
-          localStorage.setItem("lastGeneratedDate", currentDate);
-          localStorage.setItem("lastGeneratedPictureUrl", randomImageUrl);
-        });
+        localStorage.setItem("lastGeneratedDate", currentDate);
+        localStorage.setItem("lastGeneratedPictureUrl", randomImageUrl);
+        localStorage.setItem("lastGeneratedName", randomName);
+      });
     } else {
       const storedPictureUrl = localStorage.getItem("lastGeneratedPictureUrl");
       setRandomImage(storedPictureUrl);

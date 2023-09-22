@@ -9,15 +9,21 @@ const PosesLibrary = () => {
   const [poses, setPoses] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://yoga-api-nzy4.onrender.com/v1/poses/")
-      .then((response) => {
-        console.log(response);
-        const yogaPosesArray = response.data;
-        const yogaPictures = yogaPosesArray.map((pose) => pose.url_png);
-        setPoses(yogaPictures);
-        console.log(yogaPictures.length);
-      });
+    axios.get("http://localhost:4001/poses").then((response) => {
+      console.log(response);
+      const yogaPosesArray = response.data;
+      console.log(yogaPosesArray);
+      const yogaPictures = yogaPosesArray.map((pose) => [
+        pose.url_png,
+        pose.pose_name,
+        pose.sanskrit_name_adapted,
+        pose.pose_benefits,
+        pose.pose_description,
+      ]);
+      setPoses(yogaPictures);
+      console.log(yogaPictures);
+      console.log(yogaPictures.length);
+    });
   }, []);
 
   return (
