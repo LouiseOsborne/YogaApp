@@ -20,8 +20,8 @@ const PoseOfTheDay = () => {
         const randomImageUrl = yogaPosesArray[randomIndex].url_png;
         const randomName = yogaPosesArray[randomIndex].pose_name;
 
-        yogaPosesArray[randomIndex].setRandomImage(randomImageUrl);
-        yogaPosesArray[randomIndex].setPoseName(randomName);
+        setRandomImage(randomImageUrl);
+        setPoseName(randomName);
 
         localStorage.setItem("lastGeneratedDate", currentDate);
         localStorage.setItem("lastGeneratedPictureUrl", randomImageUrl);

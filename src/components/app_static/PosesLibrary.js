@@ -16,7 +16,7 @@ const PosesLibrary = () => {
       const yogaPictures = yogaPosesArray.map((pose) => [
         pose.url_png,
         pose.pose_name,
-        pose.sanskrit_name_adapted,
+        pose.sanskrit_name,
         pose.pose_benefits,
         pose.pose_description,
       ]);
