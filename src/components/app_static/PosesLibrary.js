@@ -23,9 +23,7 @@ const PosesLibrary = () => {
     }
 
     axios.get(endpoint).then((response) => {
-      console.log(response);
       const yogaPosesArray = response.data;
-      console.log(yogaPosesArray);
       const yogaPictures = yogaPosesArray.map((pose) => [
         pose.url_png,
         pose.pose_name,
@@ -34,8 +32,6 @@ const PosesLibrary = () => {
         pose.pose_description,
       ]);
       setPoses(yogaPictures);
-      console.log(yogaPictures);
-      console.log(yogaPictures.length);
     });
   }, [selectedCategory]);
 
