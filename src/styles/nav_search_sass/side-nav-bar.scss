@@ -1,53 +1,52 @@
 @import "../../variables/variables.scss";
 
 .sidebar-container {
-	background-color: $background-dark;
-	margin-top: 75px;
-	margin-left: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 30px;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	width: fit-content;
-	height: fit-content;
-	position: fixed;
-	left: 0;
-	filter: drop-shadow($drop-shadow);
+  background-color: $background-dark;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  left: 0;
+  filter: drop-shadow($drop-shadow);
 }
 
 .sidebar-title {
-	margin-top: 20px;
-	font-weight: bolder;
-	font-family: $cormorant-sc;
-	font-size: 36;
-	color: $text;
+  margin-top: 20px;
+  font-weight: bolder;
+  font-family: $cormorant-sc;
+  font-size: 36;
+  color: $text;
 }
 
 .sidebar-button {
-	font-family: $noto-sans;
-	font-size: 34;
-	border: 0px;
-	background: none;
-	color: $text;
-	&:hover {
-		opacity: 0.4;
-		transition: 300ms;
-	}
+  font-family: $noto-sans;
+  font-size: 34;
+  border: 0px;
+  background: none;
+  color: $text;
+  &:hover {
+    opacity: 0.4;
+    transition: 300ms;
+  }
 }
 
 .clear-filter {
-	background-color: $accent-three-contrast;
-	border-style: none;
-	border-radius: 10px;
-	margin-top: 20px;
-	max-width: 100px;
-	padding: 10px 10px;
-	color: $text;
-	font-family: $noto-sans;
-	&:hover {
-		color: $background-light;
-		transition: 300ms;
-	}
+  background-color: $accent-three-contrast;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 100px;
+  padding: 10px 10px;
+  color: $text;
+  font-family: $noto-sans;
+  &:hover {
+    color: $background-light;
+    transition: 300ms;
+  }
 }

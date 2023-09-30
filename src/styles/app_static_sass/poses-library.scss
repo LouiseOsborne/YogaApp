@@ -1,50 +1,47 @@
 @import "../../variables/variables.scss";
 
 .poses__library {
-	margin-left: 300px;
-	margin-right: 100px;
-	margin-top: 250px;
+  margin-left: 300px;
+  margin-right: 100px;
+  margin-top: 200px;
 }
 
 .alert-message {
-	margin-left: 500px;
-	color: #d90966;
-	font-size: x-large;
-	font-weight: bold;
+  margin-left: 500px;
+  color: #d90966;
+  font-size: x-large;
+  font-weight: bold;
 }
 .poses__container {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 20px;
-	margin-top: 50px;
-	height: calc(100vh - 250px);
-	overflow: auto;
-	box-sizing: border-box;
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  height: calc(100vh - 250px);
+  overflow: auto;
+  box-sizing: border-box;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
 
 .poses__container::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 .grid-item {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	border: 0;
-	padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 0;
+  padding: 10px;
+  height: 260px;
 }
 
 .grid-item img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .pose__button {
-	border: 0px;
-}
-
-.side-bar {
-	margin-top: 150px;
+  border: 0px;
 }

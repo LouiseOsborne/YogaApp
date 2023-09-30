@@ -1,76 +1,76 @@
 @import "../../variables/variables.scss";
 
 body {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	overflow: visible;
-	width: vw;
-	height: vh;
-	align-items: center;
-	min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  min-height: 100vh;
 }
 
 h1 {
-	color: $text;
-	font-family: $noto-sans;
-	font-size: 80px;
-	font-weight: 600;
+  color: $text;
+  font-family: $noto-sans;
+  font-size: 80px;
+  font-weight: 600;
 }
 
 .box {
-	border: 1px solid $accent-one-dark;
-	background-color: $accent-one-light;
-	filter: drop-shadow($drop-shadow);
-	font-family: $noto-sans;
+  border: 1px solid $accent-one-dark;
+  background-color: $accent-one-light;
+  filter: drop-shadow($drop-shadow);
+  font-family: $noto-sans;
 }
 
 .btn-primary {
-	background-color: $accent-three-contrast;
-	border-color: $background-dark;
-	color: $text;
-	&:hover {
-		background-color: $accent-one-light;
-		border-color: $text;
-		color: $text;
-		transition: 500ms;
-	}
+  background-color: $accent-three-contrast;
+  border-color: $background-dark;
+  color: $text;
+  &:hover {
+    background-color: $accent-one-light;
+    border-color: $text;
+    color: $text;
+    transition: 500ms;
+  }
 }
 
 .g-btn {
-	font-family: $noto-sans;
-	width: 100% !important;
-	height: 40px !important;
-	line-height: 40px !important;
-	font-size: 15px !important;
-	background-color: $background-light;
-	border-color: $background-dark;
-	color: $text;
-	box-shadow: none;
+  font-family: $noto-sans;
+  width: 100% !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 15px !important;
+  background-color: $background-light;
+  border-color: $background-dark;
+  color: $text;
+  box-shadow: none;
 }
 .g-btn > div,
 .g-btn > div > svg {
-	width: 40px !important;
-	height: 38px !important;
-	box-shadow: none;
+  width: 40px !important;
+  height: 38px !important;
+  box-shadow: none;
 }
 
 .page-content__container {
-	margin-left: 40px;
-	margin-right: 40px;
-	margin-top: 250px;
-	min-height: vh;
-	width: vw;
-	display: flex;
-	align-items: center;
-	justify-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 250px;
+  min-height: vh;
+  width: vw;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 .top-nav-bar {
-	width: 100vw;
+  width: 100vw;
 }
 
 .footer {
-	height: 200px;
-	width: 100vw;
+  height: 200px;
+  width: 100vw;
 }
