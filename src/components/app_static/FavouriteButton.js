@@ -34,7 +34,6 @@ const FavouriteButton = ({ userId, poseId }) => {
   ); //filled heart image
 
   useEffect(() => {
-    // Fetch user's favorite poses and check if the current pose is in favorites
     axios
       .get(`/favourites/${userId}`)
       .then((response) => {
