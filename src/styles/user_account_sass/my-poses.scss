@@ -1,0 +1,9 @@
+.poses__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  overflow: auto;
+  height: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}

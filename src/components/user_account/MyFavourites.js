@@ -11,10 +11,12 @@ const MyFavourites = ({ userId }) => {
         <TopNavBar />
       </div>
       <div className="my-favourites-page-content__container">
-        <div className="page-content__title">
-          <h2 className="title-text">My Favourite Poses</h2>
+        <div className="my-favourites__poses-container">
+          <div className="page-content__title">
+            <h2 className="title-text">My Favourite Poses</h2>
+          </div>
+          <MyPoses userId={userId} />
         </div>
-        <MyPoses userId={userId} />
       </div>
       <Footer />
     </div>
