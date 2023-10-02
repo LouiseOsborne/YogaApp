@@ -49,7 +49,7 @@ const PoseOfTheDay = () => {
 
   if (alertMessage) {
     return (
-      <div className="page-content__container">
+      <div className="pose-of-the-day-container">
         <div className="pose__container">
           <div className="pose-of-the-day">
             <h4 className="pose-of-the-day__alert-message">
@@ -74,7 +74,7 @@ const PoseOfTheDay = () => {
     );
   }
   return (
-    <div className="page-content__container">
+    <div className="pose-of-the-day-container">
       <div className="pose__container">
         <div className="pose-of-the-day">
           <h2>Pose Of The Day</h2>
