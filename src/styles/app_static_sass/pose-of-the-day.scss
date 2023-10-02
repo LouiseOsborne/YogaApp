@@ -12,14 +12,12 @@
 .pose__container {
   display: flex;
   align-items: center;
-  padding: 20px 135px;
+  padding: 20px 100px;
   margin-bottom: 50px;
-  // width: 80%;
   background-color: $background-dark;
   filter: drop-shadow($drop-shadow);
   border-radius: 10px;
-  max-width: 45rem;
-  // min-width: 45rem;
+  min-width: 45rem;
 }
 
 .pose-of-the-day__alert-message {
@@ -33,7 +31,7 @@
   font-size: small;
   flex: 1;
   color: $text;
-  padding-right: 20px;
+  // padding-right: 20px;
 }
 
 .pose__image {
@@ -52,7 +50,6 @@
   border-color: 1px solid #ebc789;
   border-radius: 10px;
   padding: 20px;
-  // min-width: 45rem;
   max-width: 45rem;
   background-color: $background-dark;
   filter: drop-shadow($drop-shadow);

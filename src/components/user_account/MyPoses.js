@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Alert from "../app_static/Alert";
 import PosePreview from "../app_static/PosePreview";
-import "../../styles/user_account_sass/my-poses.scss";
 import FavouriteButton from "../app_static/FavouriteButton";
 
 const MyPoses = ({ userId }) => {
