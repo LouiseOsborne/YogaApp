@@ -1,12 +1,7 @@
 import React from "react";
 import "../../styles/nav_search_sass/side-nav-bar.scss";
 
-const SideNavBar = ({
-  handleSelectedFilter,
-  handleClearFilter,
-  userId,
-  currentUser,
-}) => {
+const SideNavBar = ({ handleSelectedFilter, handleClearFilter }) => {
   return (
     <div className="sidebar-container">
       <div className="sidebar-title">Categories</div>

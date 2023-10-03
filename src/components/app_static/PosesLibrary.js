@@ -8,7 +8,7 @@ import FavouriteButton from "./FavouriteButton";
 import Alert from "./Alert";
 import Footer from "./Footer";
 
-const PosesLibrary = ({ currentUser, userId }) => {
+const PosesLibrary = ({ userId }) => {
   const [poses, setPoses] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState(null);
   const [alertMessage, setAlertMessage] = useState(null);
@@ -60,7 +60,7 @@ const PosesLibrary = ({ currentUser, userId }) => {
     return (
       <div>
         <div className="top-nav-bar">
-          <TopNavBar userId={userId} currentUser={currentUser} />
+          <TopNavBar />
         </div>
         <SideNavBar
           handleSelectedFilter={handleSelectedFilter}
@@ -76,7 +76,7 @@ const PosesLibrary = ({ currentUser, userId }) => {
   return (
     <div>
       <div className="top-nav-bar">
-        <TopNavBar userId={userId} currentUser={currentUser} />
+        <TopNavBar />
       </div>
       <div className="side-bar">
         <SideNavBar

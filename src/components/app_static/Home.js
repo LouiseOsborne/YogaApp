@@ -5,14 +5,14 @@ import Footer from "./Footer";
 
 import "../../styles/app_static_sass/home.scss";
 
-const Home = ({ currentUser, userId }) => {
+const Home = () => {
   return (
     <>
       <div className="top-nav-bar">
-        <TopNavBar userId={userId} currentUser={currentUser} />
+        <TopNavBar />
       </div>
       <div>
-        <PoseOfTheDay userId={userId} currentUser={currentUser} />
+        <PoseOfTheDay />
       </div>
       <div>
         <Footer />

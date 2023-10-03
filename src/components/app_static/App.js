@@ -12,7 +12,7 @@ import MyFavourites from "../user_account/MyFavourites";
 import "../../styles/app_static_sass/app.scss";
 
 const App = () => {
-  const [userId, setUserId] = useState(null);
+  const [userId, setUserId] = useState("");
   const [currentUser, setCurrentUser] = useState("");
 
   return (
@@ -46,7 +46,7 @@ const App = () => {
             path="/home"
             element={
               <ProtectedRoute>
-                <Home userId={userId} currentUser={currentUser} />
+                <Home />
               </ProtectedRoute>
             }
           />
@@ -54,7 +54,7 @@ const App = () => {
             path="/poses-library"
             element={
               <ProtectedRoute>
-                <PosesLibrary userId={userId} currentUser={currentUser} />
+                <PosesLibrary userId={userId} />
               </ProtectedRoute>
             }
           />
@@ -62,7 +62,7 @@ const App = () => {
             path="/my-favourites"
             element={
               <ProtectedRoute>
-                <MyFavourites userId={userId} currentUser={currentUser} />
+                <MyFavourites userId={userId} />
               </ProtectedRoute>
             }
           />
