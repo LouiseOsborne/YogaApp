@@ -6,7 +6,7 @@ import GoogleButton from "react-google-button";
 import { useUserAuth } from "../../context/UserAuthContext";
 import { auth } from "../../config/firebase";
 
-const LoginModal = ({ setUserId, userId }) => {
+const LoginModal = ({ setUserId, userId, currentUser, setCurrentUser }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -20,6 +20,11 @@ const LoginModal = ({ setUserId, userId }) => {
       await logIn(email, password);
       setUserId(auth.currentUser.uid);
       navigate("/home");
+      localStorage.setItem("currentUser", auth.currentUser.uid);
+      setCurrentUser(localStorage.getItem("currentUser"));
+      console.log(`Login current user is ${currentUser}`);
+      setUserId(auth.currentUser.uid);
+      console.log(`login user id is ${userId}`);
     } catch (err) {
       setError(err.message);
     }
@@ -31,10 +36,10 @@ const LoginModal = ({ setUserId, userId }) => {
       await googleSignIn();
       navigate("/home");
       localStorage.setItem("currentUser", auth.currentUser.uid);
-      const currentUser = localStorage.getItem("currentUser");
-      console.log(currentUser);
-      setUserId(currentUser);
-      console.log(userId);
+      setCurrentUser(localStorage.getItem("currentUser"));
+      console.log(`Login current user is ${currentUser}`);
+      setUserId(auth.currentUser.uid);
+      console.log(`login user id is ${userId}`);
     } catch (error) {
       console.log(error.message);
     }

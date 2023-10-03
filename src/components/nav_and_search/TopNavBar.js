@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../../styles/nav_search_sass/top-nav-bar.scss";
 import NavMenu from "./NavMenu";
 
-const TopNavBar = () => {
+const TopNavBar = ({ userId, currentUser }) => {
   return (
     <nav className="navbar-container">
       <div className="navbar-left">
@@ -14,7 +14,7 @@ const TopNavBar = () => {
         <div className="poses-library__link">
           <Link to="/poses-library">Poses Library</Link>
         </div>
-        <NavMenu />
+        <NavMenu userId={userId} currentUser={currentUser} />
       </div>
     </nav>
   );

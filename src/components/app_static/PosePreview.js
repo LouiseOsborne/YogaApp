@@ -6,6 +6,7 @@ import PoseDetails from "./PoseDetails";
 // import FavouriteButton from "./FavouriteButton";
 
 const PosePreview = ({
+  currentUser,
   userId,
   poseId,
   poseImage,
@@ -19,7 +20,7 @@ const PosePreview = ({
     <div className="pose-preview__container">
       <img className="pose-preview__image" src={poseImage} alt="yoga-pose" />
       <PoseDetails
-        userId={userId}
+        userId={currentUser}
         poseId={poseId}
         poseImage={poseImage}
         englishName={englishName}

@@ -5,7 +5,7 @@ import axios from "axios";
 import "../../styles/app_static_sass/pose-of-the-day.scss";
 import Alert from "./Alert";
 
-const PoseOfTheDay = () => {
+const PoseOfTheDay = ({ currentUser, userId }) => {
   const [randomImage, setRandomImage] = useState(null);
   const [poseName, setPoseName] = useState(null);
   const [alertMessage, setAlertMessage] = useState(null);
