@@ -6,18 +6,7 @@
 - Louise Osborne - Backend Manager
 - Holly Mathieson - Frontend/SASS Manager
 
-## Conventions
-
-### naming
-
-- Testing: MyComponent.test.js
-- Components: MyComponent.js
-- Styles: my-component.scss\*
-
-### classNames
-
-- BLOCK\_\_ELEMENT--MODIFIER (without hyphenated items)
-- BLOCK-ITEM\_\_ELEMENT--SECONDARY-MODIFIER (with hyphenated items)
+Live site available to view at [https://yogipaedia.onrender.com/](https://yogipaedia.onrender.com/).
 
 ## Running Instructions
 
